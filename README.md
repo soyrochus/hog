@@ -7,9 +7,9 @@ Obtain a clone of this repository
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install [pipenv](https://pipenv.pypa.io/en/latest/). Use pipenv to install the application dependencies.
 
 ```bash
-pip install pipenv
+$ pip install pipenv  #install manually dependency
+$ pipenv sync         #through pipenv, install the remaining depencies, creating virtualenv
 
-pipenv sync
 ```
 ## Prerequisites and documentation
 
@@ -34,7 +34,8 @@ pipenv sync
 Use pytest (installed when running Pipenv sync) to run the included unit tests.
 
 ```bash
-pytest
+$ pipenv shell   # activate virtualenv
+$ pytest         # run tests
 ```
 
 ## Contributing
