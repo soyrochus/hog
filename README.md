@@ -11,7 +11,7 @@ pip install pipenv
 
 pipenv sync
 ```
-# Prerequisites and documentation
+## Prerequisites and documentation
 
  - [Python](https://www.python.org/)
  - [Pipenv](https://pipenv.pypa.io/en/latest/)
@@ -21,8 +21,21 @@ pipenv sync
  - [Pyyaml](https://pyyaml.org/)
 
 ## Usage
-XXXXX
+### Introduction
 
+...
+
+### Command line
+
+...
+
+### Running Test
+
+Use pytest (installed when running Pipenv sync) to run the included unit tests.
+
+```bash
+pytest
+```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

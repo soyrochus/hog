@@ -8,6 +8,7 @@ python-docx = "*"
 mako = "*"
 pyyaml = "*"
 pytest = "*"
+black = "*"
 
 [dev-packages]
 
