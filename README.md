@@ -38,6 +38,12 @@ In the file [resources/spec.docx](resources/spec.docx) an example is shown how t
 
 The metadata element "processors" can contain a list of 1 or multiple data processors which process & transform the data read from the Word file (input and output data separately). For an example see [Processnames.py](Processnames.py). The processor need to be "loadable" by Python's module load system.
 
+In the template the data is accesible under three variables:
+
+ - *datain*: the given data
+ - *dataout*: the expected result
+ - *meta*: optional metadata (None if not given)
+
 ### Command line
 
 When running *hog.py* from the command line, the following output is given:
