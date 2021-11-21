@@ -9,6 +9,7 @@ import yaml, importlib
 from mako.template import Template
 import sys, os
 
+
 def read_docx(path):
     doc = Document(path)
 
@@ -30,6 +31,7 @@ def read_docx(path):
         raise ValueError("Test data not present in document")
     return (given, expected, metadata)
 
+
 def read_yaml(given, expected, metadata=None):
     given_res = None
     expected_res = None
@@ -46,20 +48,21 @@ def read_yaml(given, expected, metadata=None):
         else:
             return (given_res, expected_res, ex)
 
+
 def process(data, processor):
     mod = importlib.__import__(processor)
     return mod.process(data)
+
 
 def error(s):
     print(f"Error: {s}")
     sys.exit()
 
+
 def quit(s):
     print(s)
     sys.exit()
 
-def unknown(cmd):
-    error(f"Unknown command: {cmd}")
 
 def prepare(doc):
     try:
@@ -67,7 +70,7 @@ def prepare(doc):
     except ValueError as ex:
         error(ex)
 
-    given2, expected2, metadata2  = read_yaml(expected, given, metadata)
+    given2, expected2, metadata2 = read_yaml(expected, given, metadata)
     if isinstance(given2, yaml.YAMLError):
         error(f"Error in Given input: {given2}")
     elif isinstance(expected2, yaml.YAMLError):
@@ -82,40 +85,40 @@ def prepare(doc):
 
         return {"datain": given2, "dataout": expected2, "meta": metadata2}
 
+
 def generate(data, template, output):
     template = Template(filename=template)
     r = template.render(**data)
-    with open(output, 'w') as f:
+    with open(output, "w") as f:
         f.write(r)
 
+
 def usage():
-    print("""
+    print(
+        """
 Usage: hog validate <<DOCX>>
        hog generate <<DOC>> <<TEMPLATE>> <<OUTPUT_FILE>>
-""")
+"""
+    )
+
 
 def main():
     try:
         l = len(sys.argv)
-        if l == 3:
+        if l == 3 and sys.argv[1] == "validate":
             env, cmd, doc = sys.argv
-            if cmd == "validate":
-                data = prepare(os.path.abspath(doc))
-                quit(f"Validated!\n{data}")
-            else:
-                unkown(cmd)
-        elif l == 5:
+            data = prepare(os.path.abspath(doc))
+            quit(f"Validated!\n{data}")
+        elif l == 5 and sys.argv[1] == "generate":
             env, cmd, doc, templ, out = sys.argv
-            if cmd == "generate":
-                data = prepare(os.path.abspath(doc))
-                generate(data, os.path.abspath(templ), os.path.abspath(out))
-                quit(f"Output written to {out}")
-            else:
-                unknown(cmd)
+            data = prepare(os.path.abspath(doc))
+            generate(data, os.path.abspath(templ), os.path.abspath(out))
+            quit(f"Output written to {out}")
         else:
             usage()
     except Exception as ex:
         error(ex)
+
 
 if __name__ == "__main__":
     main()
