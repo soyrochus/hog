@@ -26,9 +26,9 @@ $ pipenv sync         #through pipenv, install the remaining depencies, creating
 
 Hog is a simple and quick and (very) dirty script to:
 
-    - extract Yaml data from a Word document (docx)
-    - expand the data into a file based on the [Mako templating engine](https://www.makotemplates.org/)
-    - optionally process the data through one or multiple processors, written in Python 3
+ - extract Yaml data from a Word document (docx)
+ - expand the data into a file based on the [Mako templating engine](https://www.makotemplates.org/)
+ - optionally process the data through one or multiple processors, written in Python 3
 
 The basic use case is for hog to serve as a command-line tool to help generation of automatic tests which are specified in the Word documents.
 
