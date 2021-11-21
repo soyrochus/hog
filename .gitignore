@@ -131,3 +131,5 @@ dmypy.json
 # hog local files
 
 out/pi.py
+out/test.py
+out/test.txt
