@@ -10,7 +10,7 @@ from mako.template import Template
 import sys, os
 
 
-def read_docx(path):
+def read_docx(path: str) -> (str, str, str):
     doc = Document(path)
 
     given = None

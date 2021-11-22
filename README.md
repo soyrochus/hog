@@ -4,8 +4,7 @@ In honour of the Hog, which is a beautiful, underappreciated animal, as well as 
 
 ## Installation
 
-Obtain a clone of this repository
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install [pipenv](https://pipenv.pypa.io/en/latest/). Use pipenv to install the application dependencies.
+Obtain a clone of this repository. The script is using Python which needs to be installed as well as the package manager [pip](https://pip.pypa.io/en/stable/). The latter must be used to install [pipenv](https://pipenv.pypa.io/en/latest/). Use pipenv to install the application dependencies.
 
 ```bash
 $ pip install pipenv  #install manually dependency
@@ -55,8 +54,8 @@ Usage: hog validate <<DOCX>>
 
 This shows the two possible options offered by hog:
 
- - *validate*: validates the Word document loaded from the path as denoted by *<<DOCX>>
- - *generate*: generates the *<<OUTPUT_FILE>>* based on the data in the Word Document and the template denoted by *<<TEMPLATE>>
+ - *validate*: validates the Yaml for correctness as contained in the Word document loaded from the path as denoted by *<<DOCX>>*
+ - *generate*: generates the *<<OUTPUT_FILE>>* based on the data in the Word Document and the template denoted by *<<TEMPLATE>>*
 
 ### Running Test
 
