@@ -58,11 +58,9 @@ def error(s):
     print(f"Error: {s}")
     sys.exit()
 
-
 def quit(s):
     print(s)
     sys.exit()
-
 
 def prepare(doc):
     try:
@@ -85,13 +83,11 @@ def prepare(doc):
 
         return {"datain": given2, "dataout": expected2, "meta": metadata2}
 
-
 def generate(data, template, output):
     template = Template(filename=template)
     r = template.render(**data)
     with open(output, "w") as f:
         f.write(r)
-
 
 def usage():
     print(
@@ -100,7 +96,6 @@ Usage: hog validate <<DOCX>>
        hog generate <<DOC>> <<TEMPLATE>> <<OUTPUT_FILE>>
 """
     )
-
 
 def main():
     try:

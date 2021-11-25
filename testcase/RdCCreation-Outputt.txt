@@ -1,0 +1,27 @@
+{
+  "commentaireRDV": null,
+  "commentaireREX": null,
+  "debutRDV": {
+    "$date": "2021-10-25T23:00:00.000Z"
+  },
+  "estFictif": false,
+  "estImperatif": false,
+  "evenementsMaintenance": [],
+  "finRDV": {
+    "$date": "2021-10-25T23:15:00.000Z"
+  },
+  "flotte": "26",
+  "idGMAO": "1853106",
+  "idSMT": "619cb3f4345d9f3778c08d99",
+  "idSerie": "VUAUTREEVA-ATEO",
+  "invariantMR": "test",
+  "libelleRDV": "test01",
+  "numeroActif": "6841",
+  "numeroMR": null,
+  "numeroVoie": null,
+  "raisonEtre": null,
+  "siSource": null,
+  "siteReal": "TLA",
+  "statutRDV": "BROUILLON",
+  "stf": "SBF"
+}

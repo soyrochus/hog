@@ -1,0 +1,2806 @@
+Text{
+    "schema": {
+      "type": "struct",
+      "fields": [
+        {
+          "type": "struct",
+          "fields": [
+            {
+              "type": "string",
+              "optional": false,
+              "field": "TICKETID"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "CLASS"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "DESCRIPTION"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "STATUS"
+            },
+            {
+              "type": "int64",
+              "optional": false,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "STATUSDATE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "REPORTEDPRIORITY"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "INTERNALPRIORITY"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "IMPACT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "URGENCY"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "REPORTEDBY"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "REPORTDATE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "AFFECTEDPERSON"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "AFFECTEDDATE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "SOURCE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "SUPERVISOR"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OWNER"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OWNERGROUP"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "ISGLOBAL"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "RELATEDTOGLOBAL"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "GLOBALTICKETID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "GLOBALTICKETCLASS"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "EXTERNALRECID"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "SITEVISIT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "ORIGRECORDID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "ORIGRECORDCLASS"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "GLACCOUNT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "COMMODITYGROUP"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "COMMODITY"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "INHERITSTATUS"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "ISKNOWNERROR"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "TARGETSTART"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "TARGETFINISH"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "ACTUALSTART"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "ACTUALFINISH"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "ORIGRECSITEID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "ORIGRECORGID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "SITEID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "ORGID"
+            },
+            {
+              "type": "int64",
+              "optional": false,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "CHANGEDATE"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "CHANGEBY"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "HISTORYFLAG"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "TEMPLATE"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "HASACTIVITY"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "FAILURECODE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PROBLEMCODE"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "ACTLABHRS"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "ACTLABCOST"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "AFFECTEDPHONE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "REPORTEDPHONE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "AFFECTEDEMAIL"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "REPORTEDEMAIL"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "ASSETSITEID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "TEMPLATEID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "VENDOR"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "ASSETNUM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "LOCATION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "CLASSSTRUCTUREID"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "ISKNOWNERRORDATE"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "TARGETCONTACTDATE"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "ACTUALCONTACTDATE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "FR1CODE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "FR2CODE"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "TICKETUID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "SOLUTION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "ASSETORGID"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "LANGCODE"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "HASLD"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "CINUM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "CREATEWOMULTI"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "TARGETDESC"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "SELFSERVSOLACCESS"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "HASSOLUTION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PMCOMTYPE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PMCOMRESOLUTION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSACOMPONENT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSALOGENTRYID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAMAINTRECOM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAMECHCOMMENTS"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAOPCOMMENTS"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAPOSITION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSASTATUS"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSATRIPNUM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAWONUM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAPROBLEM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAASSETID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSACATID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAWOSTATUS"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "PLUSAEVENTTYPE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSACATEGORY"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSADELAYTIME"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAEFFECTCODE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAOPREGIME"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSASERIES"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "PLUSAADMINEVENT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSASERIESID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAROOTCAUSE"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "PLUSAACCTMAINTFLAG"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAPRTREGREGISTRATION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAPRTCATPART"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAPRTASTSNSERIAL"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAACCTMAINTPCNT"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "PLUSAMANAGEWITHWRFL"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "PLUSAREMOTESITERESCUE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSATURBINETEMP"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "PLUSAUNCONTFAILURE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAVIBMAXFRONT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAVIBMAXREAR"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAVIGVMAX"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAWHENDISCCODE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAOVERTEMPDUR"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "PLUSAPILOTPROC"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAREDTOPNUM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSASECCLASSID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSATIMEINTO"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAGROUNDSPEED"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAHAZARDINDEX"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAHAZARDINDID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAHPCOMPSPOOLSPD"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAINPUTMETHOD"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAIPCOMPSPOOLSPD"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSALOCATIONID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSALPCOMPSPOOLSPD"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAMISSIONTYPEID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAORIGINID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAOVERSPEEDDUR"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAEHMNUMBER"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAENVCONDID"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "PLUSAETOPS"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "PLUSAFALSEALARM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAFLIGHTNUM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAFRACASNUM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAFUELFLOW"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAGFORCE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAAIRSPEED"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAALTITUDE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAAMBIENTTEMP"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAANGLEOFATTACK"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSADESTID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSADIVLOCID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSADURATION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSALOCATION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "CALCORGID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "CALCCALENDAR"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "CALCSHIFT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "SERIALNUM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAPART"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OPERATOR"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "OSM_CAUSEAPPRO"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_EVENTWONUM"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "OSM_AFA"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "OSM_ALAP"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "OSM_ANOTIFIER"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_APPROB"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_ASSETNUM2"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_ASSETNUM_VEH"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_CAT_RESTRICT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_CODE_RESTRICTION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_COMMENTFT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_COMMENTRDV"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_CONCLUSION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_CONSEQ_EXPLOIT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_CORRFOUR"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_CREATEUR"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "OSM_DATDEBRDV"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "OSM_DATECREATION"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "OSM_DATEDEGURG"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "OSM_DATE_DEB_ATT"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "OSM_DATE_FICHE_ROSE"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "OSM_DATE_FIN_ATT"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "OSM_DATE_PARTICULARITE"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "OSM_DATFINRDV"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_DEGURG"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_EDITEUR_FICHE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_GRAVITE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_IDSERIE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_INTER"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_ITEMNUM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_ITEMNUM_DESCRIPTION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_LARIDFOUR"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_LIBEL_OEI"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_LIBEL_PARTICULARITE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_MAP"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_MODE_REAPPRO"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_MOTIFKOFT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_MOTIF_POSE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_MRSTAT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_MRSTATGARANT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_NUM_DOSSIER"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_NUM_DSM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_NUM_IDENT_EU"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_NUM_IDENT_EU2"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_NUM_IMMAT_EF"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_NUM_IMMAT_EF2"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_OBSERVATION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_ORGANE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_ORGSERIE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_ORGSTATGARANT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_PAGE0"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_PLUSACURRENT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_QUANTITE_ATT"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "OSM_RECIDIVE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_RESP"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_SITEREAL"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_STF"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_SYMBOLE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_TELDESTINATAIRE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_TELEMETTEUR"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_TYPE_SR"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_VALIFOUR"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_VALISNCF"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_VEH_PORTEUR_FICHE_ROSE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_VERIF"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_VITESSE_LIMITE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_NUMVOIE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "ASSIGNEDOWNERGROUP"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSALOGDEFER"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "ROWSTAMP"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "OSM_IMPERATIF"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_INVARIANT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_LIEUREALID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_LIEU_REAL"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "OSM_MAINT_DELOCALISEE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_REF_LIEU_REAL"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_WONUM_ORG"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "OSM_ARCHIVE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_CAUSE_DEP"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_COMM_REX"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "OSM_DATFINRDV_REEL"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_RAISONETRE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_FAMILLE_RESTRICTION"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "OSM_WASMODIFUTIL"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_IDRDVSOURCE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_SISOURCE"
+            }
+          ],
+          "optional": true,
+          "name": "DBZ.MAXIMO.TICKET.Value",
+          "field": "before"
+        },
+        {
+          "type": "struct",
+          "fields": [
+            {
+              "type": "string",
+              "optional": false,
+              "field": "TICKETID"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "CLASS"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "DESCRIPTION"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "STATUS"
+            },
+            {
+              "type": "int64",
+              "optional": false,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "STATUSDATE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "REPORTEDPRIORITY"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "INTERNALPRIORITY"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "IMPACT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "URGENCY"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "REPORTEDBY"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "REPORTDATE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "AFFECTEDPERSON"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "AFFECTEDDATE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "SOURCE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "SUPERVISOR"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OWNER"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OWNERGROUP"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "ISGLOBAL"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "RELATEDTOGLOBAL"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "GLOBALTICKETID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "GLOBALTICKETCLASS"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "EXTERNALRECID"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "SITEVISIT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "ORIGRECORDID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "ORIGRECORDCLASS"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "GLACCOUNT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "COMMODITYGROUP"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "COMMODITY"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "INHERITSTATUS"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "ISKNOWNERROR"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "TARGETSTART"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "TARGETFINISH"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "ACTUALSTART"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "ACTUALFINISH"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "ORIGRECSITEID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "ORIGRECORGID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "SITEID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "ORGID"
+            },
+            {
+              "type": "int64",
+              "optional": false,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "CHANGEDATE"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "CHANGEBY"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "HISTORYFLAG"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "TEMPLATE"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "HASACTIVITY"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "FAILURECODE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PROBLEMCODE"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "ACTLABHRS"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "ACTLABCOST"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "AFFECTEDPHONE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "REPORTEDPHONE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "AFFECTEDEMAIL"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "REPORTEDEMAIL"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "ASSETSITEID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "TEMPLATEID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "VENDOR"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "ASSETNUM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "LOCATION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "CLASSSTRUCTUREID"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "ISKNOWNERRORDATE"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "TARGETCONTACTDATE"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "ACTUALCONTACTDATE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "FR1CODE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "FR2CODE"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "TICKETUID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "SOLUTION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "ASSETORGID"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "LANGCODE"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "HASLD"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "CINUM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "CREATEWOMULTI"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "TARGETDESC"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "SELFSERVSOLACCESS"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "HASSOLUTION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PMCOMTYPE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PMCOMRESOLUTION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSACOMPONENT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSALOGENTRYID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAMAINTRECOM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAMECHCOMMENTS"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAOPCOMMENTS"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAPOSITION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSASTATUS"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSATRIPNUM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAWONUM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAPROBLEM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAASSETID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSACATID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAWOSTATUS"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "PLUSAEVENTTYPE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSACATEGORY"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSADELAYTIME"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAEFFECTCODE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAOPREGIME"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSASERIES"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "PLUSAADMINEVENT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSASERIESID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAROOTCAUSE"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "PLUSAACCTMAINTFLAG"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAPRTREGREGISTRATION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAPRTCATPART"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAPRTASTSNSERIAL"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAACCTMAINTPCNT"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "PLUSAMANAGEWITHWRFL"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "PLUSAREMOTESITERESCUE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSATURBINETEMP"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "PLUSAUNCONTFAILURE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAVIBMAXFRONT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAVIBMAXREAR"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAVIGVMAX"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAWHENDISCCODE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAOVERTEMPDUR"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "PLUSAPILOTPROC"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAREDTOPNUM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSASECCLASSID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSATIMEINTO"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAGROUNDSPEED"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAHAZARDINDEX"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAHAZARDINDID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAHPCOMPSPOOLSPD"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAINPUTMETHOD"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAIPCOMPSPOOLSPD"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSALOCATIONID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSALPCOMPSPOOLSPD"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAMISSIONTYPEID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAORIGINID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAOVERSPEEDDUR"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAEHMNUMBER"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAENVCONDID"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "PLUSAETOPS"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "PLUSAFALSEALARM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAFLIGHTNUM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAFRACASNUM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAFUELFLOW"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAGFORCE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAAIRSPEED"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAALTITUDE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAAMBIENTTEMP"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAANGLEOFATTACK"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSADESTID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSADIVLOCID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSADURATION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSALOCATION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "CALCORGID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "CALCCALENDAR"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "CALCSHIFT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "SERIALNUM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSAPART"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OPERATOR"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "OSM_CAUSEAPPRO"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_EVENTWONUM"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "OSM_AFA"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "OSM_ALAP"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "OSM_ANOTIFIER"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_APPROB"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_ASSETNUM2"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_ASSETNUM_VEH"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_CAT_RESTRICT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_CODE_RESTRICTION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_COMMENTFT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_COMMENTRDV"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_CONCLUSION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_CONSEQ_EXPLOIT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_CORRFOUR"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_CREATEUR"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "OSM_DATDEBRDV"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "OSM_DATECREATION"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "OSM_DATEDEGURG"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "OSM_DATE_DEB_ATT"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "OSM_DATE_FICHE_ROSE"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "OSM_DATE_FIN_ATT"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "OSM_DATE_PARTICULARITE"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "OSM_DATFINRDV"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_DEGURG"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_EDITEUR_FICHE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_GRAVITE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_IDSERIE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_INTER"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_ITEMNUM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_ITEMNUM_DESCRIPTION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_LARIDFOUR"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_LIBEL_OEI"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_LIBEL_PARTICULARITE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_MAP"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_MODE_REAPPRO"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_MOTIFKOFT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_MOTIF_POSE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_MRSTAT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_MRSTATGARANT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_NUM_DOSSIER"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_NUM_DSM"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_NUM_IDENT_EU"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_NUM_IDENT_EU2"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_NUM_IMMAT_EF"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_NUM_IMMAT_EF2"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_OBSERVATION"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_ORGANE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_ORGSERIE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_ORGSTATGARANT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_PAGE0"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_PLUSACURRENT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_QUANTITE_ATT"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "OSM_RECIDIVE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_RESP"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_SITEREAL"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_STF"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_SYMBOLE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_TELDESTINATAIRE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_TELEMETTEUR"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_TYPE_SR"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_VALIFOUR"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_VALISNCF"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_VEH_PORTEUR_FICHE_ROSE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_VERIF"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_VITESSE_LIMITE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_NUMVOIE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "ASSIGNEDOWNERGROUP"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "PLUSALOGDEFER"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "ROWSTAMP"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "OSM_IMPERATIF"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_INVARIANT"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_LIEUREALID"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_LIEU_REAL"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "OSM_MAINT_DELOCALISEE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_REF_LIEU_REAL"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_WONUM_ORG"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "OSM_ARCHIVE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_CAUSE_DEP"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_COMM_REX"
+            },
+            {
+              "type": "int64",
+              "optional": true,
+              "name": "io.debezium.time.Timestamp",
+              "version": 1,
+              "field": "OSM_DATFINRDV_REEL"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_RAISONETRE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_FAMILLE_RESTRICTION"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "OSM_WASMODIFUTIL"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_IDRDVSOURCE"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "OSM_SISOURCE"
+            }
+          ],
+          "optional": true,
+          "name": "DBZ.MAXIMO.TICKET.Value",
+          "field": "after"
+        },
+        {
+          "type": "struct",
+          "fields": [
+            {
+              "type": "string",
+              "optional": false,
+              "field": "version"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "connector"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "name"
+            },
+            {
+              "type": "int64",
+              "optional": false,
+              "field": "ts_ms"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "name": "io.debezium.data.Enum",
+              "version": 1,
+              "parameters": {
+                "allowed": "true,last,false"
+              },
+              "default": "false",
+              "field": "snapshot"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "db"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "sequence"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "schema"
+            },
+            {
+              "type": "string",
+              "optional": false,
+              "field": "table"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "txId"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "scn"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "commit_scn"
+            },
+            {
+              "type": "string",
+              "optional": true,
+              "field": "lcr_position"
+            }
+          ],
+          "optional": false,
+          "name": "io.debezium.connector.oracle.Source",
+          "field": "source"
+        },
+        {
+          "type": "string",
+          "optional": false,
+          "field": "op"
+        },
+        {
+          "type": "int64",
+          "optional": true,
+          "field": "ts_ms"
+        },
+        {
+          "type": "struct",
+          "fields": [
+            {
+              "type": "string",
+              "optional": false,
+              "field": "id"
+            },
+            {
+              "type": "int64",
+              "optional": false,
+              "field": "total_order"
+            },
+            {
+              "type": "int64",
+              "optional": false,
+              "field": "data_collection_order"
+            }
+          ],
+          "optional": true,
+          "field": "transaction"
+        }
+      ],
+      "optional": false,
+      "name": "DBZ.MAXIMO.TICKET.Envelope"
+    },
+    "payload": {
+      "before": null,
+      "after": {
+        "TICKETID": "1853106",
+        "CLASS": "SR",
+        "DESCRIPTION": "test01",
+        "STATUS": "BROUILLON",
+        "STATUSDATE": 1635206290000,
+        "REPORTEDPRIORITY": null,
+        "INTERNALPRIORITY": null,
+        "IMPACT": null,
+        "URGENCY": null,
+        "REPORTEDBY": null,
+        "REPORTDATE": 1635206290000,
+        "AFFECTEDPERSON": null,
+        "AFFECTEDDATE": null,
+        "SOURCE": null,
+        "SUPERVISOR": null,
+        "OWNER": null,
+        "OWNERGROUP": null,
+        "ISGLOBAL": "0",
+        "RELATEDTOGLOBAL": "0",
+        "GLOBALTICKETID": null,
+        "GLOBALTICKETCLASS": null,
+        "EXTERNALRECID": null,
+        "SITEVISIT": "0",
+        "ORIGRECORDID": null,
+        "ORIGRECORDCLASS": null,
+        "GLACCOUNT": null,
+        "COMMODITYGROUP": null,
+        "COMMODITY": null,
+        "INHERITSTATUS": "1",
+        "ISKNOWNERROR": "0",
+        "TARGETSTART": null,
+        "TARGETFINISH": null,
+        "ACTUALSTART": null,
+        "ACTUALFINISH": null,
+        "ORIGRECSITEID": null,
+        "ORIGRECORGID": null,
+        "SITEID": "MATERIEL",
+        "ORGID": "SNCF",
+        "CHANGEDATE": 1635206290000,
+        "CHANGEBY": "PCA01",
+        "HISTORYFLAG": "0",
+        "TEMPLATE": "0",
+        "HASACTIVITY": "0",
+        "FAILURECODE": null,
+        "PROBLEMCODE": null,
+        "ACTLABHRS": "0",
+        "ACTLABCOST": "0.00",
+        "AFFECTEDPHONE": null,
+        "REPORTEDPHONE": null,
+        "AFFECTEDEMAIL": null,
+        "REPORTEDEMAIL": null,
+        "ASSETSITEID": "MATERIEL",
+        "TEMPLATEID": null,
+        "VENDOR": null,
+        "ASSETNUM": "6841",
+        "LOCATION": "26",
+        "CLASSSTRUCTUREID": null,
+        "ISKNOWNERRORDATE": null,
+        "TARGETCONTACTDATE": null,
+        "ACTUALCONTACTDATE": null,
+        "FR1CODE": null,
+        "FR2CODE": null,
+        "TICKETUID": "6181725",
+        "SOLUTION": null,
+        "ASSETORGID": "SNCF",
+        "LANGCODE": "FR",
+        "HASLD": "0",
+        "CINUM": null,
+        "CREATEWOMULTI": "MULTI",
+        "TARGETDESC": null,
+        "SELFSERVSOLACCESS": "0",
+        "HASSOLUTION": "0",
+        "PMCOMTYPE": null,
+        "PMCOMRESOLUTION": null,
+        "PLUSACOMPONENT": null,
+        "PLUSALOGENTRYID": null,
+        "PLUSAMAINTRECOM": null,
+        "PLUSAMECHCOMMENTS": null,
+        "PLUSAOPCOMMENTS": null,
+        "PLUSAPOSITION": null,
+        "PLUSASTATUS": null,
+        "PLUSATRIPNUM": null,
+        "PLUSAWONUM": null,
+        "PLUSAPROBLEM": null,
+        "PLUSAASSETID": null,
+        "PLUSACATID": null,
+        "PLUSAWOSTATUS": null,
+        "PLUSAEVENTTYPE": "OPERATIONAL",
+        "PLUSACATEGORY": null,
+        "PLUSADELAYTIME": null,
+        "PLUSAEFFECTCODE": null,
+        "PLUSAOPREGIME": null,
+        "PLUSASERIES": null,
+        "PLUSAADMINEVENT": "0",
+        "PLUSASERIESID": null,
+        "PLUSAROOTCAUSE": null,
+        "PLUSAACCTMAINTFLAG": "0",
+        "PLUSAPRTREGREGISTRATION": null,
+        "PLUSAPRTCATPART": null,
+        "PLUSAPRTASTSNSERIAL": null,
+        "PLUSAACCTMAINTPCNT": null,
+        "PLUSAMANAGEWITHWRFL": "0",
+        "PLUSAREMOTESITERESCUE": "0",
+        "PLUSATURBINETEMP": null,
+        "PLUSAUNCONTFAILURE": "0",
+        "PLUSAVIBMAXFRONT": null,
+        "PLUSAVIBMAXREAR": null,
+        "PLUSAVIGVMAX": "0.00",
+        "PLUSAWHENDISCCODE": null,
+        "PLUSAOVERTEMPDUR": null,
+        "PLUSAPILOTPROC": "0",
+        "PLUSAREDTOPNUM": null,
+        "PLUSASECCLASSID": null,
+        "PLUSATIMEINTO": null,
+        "PLUSAGROUNDSPEED": null,
+        "PLUSAHAZARDINDEX": null,
+        "PLUSAHAZARDINDID": null,
+        "PLUSAHPCOMPSPOOLSPD": null,
+        "PLUSAINPUTMETHOD": null,
+        "PLUSAIPCOMPSPOOLSPD": null,
+        "PLUSALOCATIONID": null,
+        "PLUSALPCOMPSPOOLSPD": null,
+        "PLUSAMISSIONTYPEID": null,
+        "PLUSAORIGINID": null,
+        "PLUSAOVERSPEEDDUR": null,
+        "PLUSAEHMNUMBER": null,
+        "PLUSAENVCONDID": null,
+        "PLUSAETOPS": "0",
+        "PLUSAFALSEALARM": "0",
+        "PLUSAFLIGHTNUM": null,
+        "PLUSAFRACASNUM": null,
+        "PLUSAFUELFLOW": null,
+        "PLUSAGFORCE": null,
+        "PLUSAAIRSPEED": null,
+        "PLUSAALTITUDE": null,
+        "PLUSAAMBIENTTEMP": null,
+        "PLUSAANGLEOFATTACK": null,
+        "PLUSADESTID": null,
+        "PLUSADIVLOCID": null,
+        "PLUSADURATION": null,
+        "PLUSALOCATION": null,
+        "CALCORGID": null,
+        "CALCCALENDAR": null,
+        "CALCSHIFT": null,
+        "SERIALNUM": null,
+        "PLUSAPART": null,
+        "OPERATOR": null,
+        "OSM_CAUSEAPPRO": "0",
+        "OSM_EVENTWONUM": null,
+        "OSM_AFA": "0",
+        "OSM_ALAP": "0",
+        "OSM_ANOTIFIER": "0",
+        "OSM_APPROB": null,
+        "OSM_ASSETNUM2": null,
+        "OSM_ASSETNUM_VEH": null,
+        "OSM_CAT_RESTRICT": null,
+        "OSM_CODE_RESTRICTION": null,
+        "OSM_COMMENTFT": null,
+        "OSM_COMMENTRDV": null,
+        "OSM_CONCLUSION": null,
+        "OSM_CONSEQ_EXPLOIT": null,
+        "OSM_CORRFOUR": null,
+        "OSM_CREATEUR": "PCA01",
+        "OSM_DATDEBRDV": 1635206400000,
+        "OSM_DATECREATION": 1635206290000,
+        "OSM_DATEDEGURG": null,
+        "OSM_DATE_DEB_ATT": null,
+        "OSM_DATE_FICHE_ROSE": null,
+        "OSM_DATE_FIN_ATT": null,
+        "OSM_DATE_PARTICULARITE": null,
+        "OSM_DATFINRDV": 1635207300000,
+        "OSM_DEGURG": null,
+        "OSM_EDITEUR_FICHE": null,
+        "OSM_GRAVITE": null,
+        "OSM_IDSERIE": "VUAUTREEVA-ATEO",
+        "OSM_INTER": null,
+        "OSM_ITEMNUM": null,
+        "OSM_ITEMNUM_DESCRIPTION": null,
+        "OSM_LARIDFOUR": null,
+        "OSM_LIBEL_OEI": null,
+        "OSM_LIBEL_PARTICULARITE": null,
+        "OSM_MAP": null,
+        "OSM_MODE_REAPPRO": null,
+        "OSM_MOTIFKOFT": null,
+        "OSM_MOTIF_POSE": null,
+        "OSM_MRSTAT": null,
+        "OSM_MRSTATGARANT": "Non",
+        "OSM_NUM_DOSSIER": null,
+        "OSM_NUM_DSM": null,
+        "OSM_NUM_IDENT_EU": "508721821314",
+        "OSM_NUM_IDENT_EU2": null,
+        "OSM_NUM_IMMAT_EF": "872182131",
+        "OSM_NUM_IMMAT_EF2": null,
+        "OSM_OBSERVATION": null,
+        "OSM_ORGANE": null,
+        "OSM_ORGSERIE": null,
+        "OSM_ORGSTATGARANT": null,
+        "OSM_PAGE0": null,
+        "OSM_PLUSACURRENT": null,
+        "OSM_QUANTITE_ATT": null,
+        "OSM_RECIDIVE": "0",
+        "OSM_RESP": null,
+        "OSM_SITEREAL": "TLA",
+        "OSM_STF": "SBF",
+        "OSM_SYMBOLE": null,
+        "OSM_TELDESTINATAIRE": null,
+        "OSM_TELEMETTEUR": null,
+        "OSM_TYPE_SR": "RDV",
+        "OSM_VALIFOUR": null,
+        "OSM_VALISNCF": null,
+        "OSM_VEH_PORTEUR_FICHE_ROSE": null,
+        "OSM_VERIF": null,
+        "OSM_VITESSE_LIMITE": null,
+        "OSM_NUMVOIE": null,
+        "ASSIGNEDOWNERGROUP": null,
+        "PLUSALOGDEFER": null,
+        "ROWSTAMP": "21572118438",
+        "OSM_IMPERATIF": "0",
+        "OSM_INVARIANT": null,
+        "OSM_LIEUREALID": "469",
+        "OSM_LIEU_REAL": "TLA",
+        "OSM_MAINT_DELOCALISEE": "0",
+        "OSM_REF_LIEU_REAL": "MA0077",
+        "OSM_WONUM_ORG": null,
+        "OSM_ARCHIVE": "0",
+        "OSM_CAUSE_DEP": null,
+        "OSM_COMM_REX": null,
+        "OSM_DATFINRDV_REEL": null,
+        "OSM_RAISONETRE": null,
+        "OSM_FAMILLE_RESTRICTION": null,
+        "OSM_WASMODIFUTIL": "1",
+        "OSM_IDRDVSOURCE": null,
+        "OSM_SISOURCE": null
+      },
+      "source": {
+        "version": "1.7.0.Final",
+        "connector": "oracle",
+        "name": "10.148.6.148",
+        "ts_ms": 1635206408000,
+        "snapshot": "false",
+        "db": "OSMOD36",
+        "sequence": null,
+        "schema": "MAXIMO",
+        "table": "TICKET",
+        "txId": "001200060010ae2b",
+        "scn": "10136604211887",
+        "commit_scn": "10136604212062",
+        "lcr_position": null
+      },
+      "op": "c",
+      "ts_ms": 1635199234156,
+      "transaction": null
+    }
+  }Collapse
+  
+  
+  
+  
